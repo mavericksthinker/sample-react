@@ -1,0 +1,35 @@
+.userDetails__header__composite {
+    padding: 3rem 3rem 0.5rem;
+}
+
+.userDetails__header__container {
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .userDetails__header__composite {
+        padding: 3rem 1.5rem 0.5rem;
+    }
+}
+
+.userDetails__header__userLink {
+    color: #02c2f3;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.userDetails__header__arrow {
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+
+.userDetails__header__username,
+.userDetails__header__userLink {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.userDetails__notfound__container {
+    padding: 3rem;
+    text-align: center;
+}

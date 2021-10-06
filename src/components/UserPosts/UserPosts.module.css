@@ -1,0 +1,18 @@
+.noUserPostFound {
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.userPosts__header__composite {
+    padding: 2rem 3rem 0.5rem;
+}
+
+.userPosts__header__container {
+    display: flex;
+}
+
+@media (max-width: 480px) {
+    .userPosts__header__composite {
+        padding: 3rem 1.5rem 0.5rem;
+    }
+}

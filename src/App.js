@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import Dashboard from "./components/Dashboard/Dashboard";
+import UserDetails from "./components/UserDetails/UserDetails";
+
+const GET_USER_ROUTE = 'https://jsonplaceholder.typicode.com/users';
+const GET_USER_POST_ROUTE = 'https://jsonplaceholder.typicode.com/posts?userId=';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="App">
+        <main className="main-container">
+          <Router>
+            <Switch>
+              <Route exact path="/">
+                <Redirect to='/users' />
+              </Route>
+              <Route exact path="/users">
+                <Dashboard usersRoute={GET_USER_ROUTE}/>
+              </Route>
+              <Route exact path="/users/:userId">
+                <UserDetails usersRoute={GET_USER_ROUTE} postsRoute={GET_USER_POST_ROUTE} />
+              </Route>
+            </Switch>
+          </Router>
+        </main>
+      </div>
   );
 }
 

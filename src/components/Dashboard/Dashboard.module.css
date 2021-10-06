@@ -1,0 +1,39 @@
+.layoutComposite {
+    padding: 3rem 3rem 0.5rem;
+}
+
+.layoutContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .layoutComposite {
+        padding: 3rem 1.5rem 0.5rem;
+    }
+    .layoutContainer {
+        flex-direction: column;
+    }
+}
+
+.layoutHeader {
+    font-size: 1.5rem;
+}
+
+@media (max-width: 480px) {
+    .layoutHeader {
+        width: 90%;
+        margin-bottom: 1rem;
+    }
+}
+
+.userList__composite {
+    padding: 0 3rem;
+}
+
+@media (max-width: 480px) {
+    .userList__composite {
+        padding: 0 1.5rem;
+    }
+}

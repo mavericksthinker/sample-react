@@ -1,0 +1,63 @@
+.userDetails__body__composite {
+    padding: 1rem 3rem 0.5rem;
+}
+
+.userDetails__body__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 680px) {
+    .userDetails__body__container {
+        flex-direction: column;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+@media (max-width: 480px) {
+    .userDetails__body__composite {
+        padding: 0 1.5rem 0.5rem;
+    }
+}
+
+.userDetails__body__contactInfo__container,
+.userDetails__body__address__container,
+.userDetails__body__company__container {
+    border: 1px solid #ccc;
+    padding: 1.2rem 1.2rem 2.5rem 1.2rem;
+    flex-basis: 32.5%;
+}
+
+@media (max-width: 680px) {
+    .userDetails__body__contactInfo__container,
+    .userDetails__body__address__container,
+    .userDetails__body__company__container {
+        border: none;
+        padding: 1.2rem 0 2rem ;
+        flex-basis: 32.5%;
+    }
+}
+
+.userDetails__body__contactInfo__label,
+.userDetails__body__address__label,
+.userDetails__body__company__label {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.userDetails__body__contactInfo__username,
+.userDetails__body__contactInfo__email,
+.userDetails__body__contactInfo__phone,
+.userDetails__body__contactInfo__website,
+.userDetails__body__address__username,
+.userDetails__body__company__companyName,
+.userDetails__body__company__bs,
+.userDetails__body__company__catchPhrase {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.userDetails__body__userLink {
+    color: #02c2f3;
+    text-decoration: none;
+}

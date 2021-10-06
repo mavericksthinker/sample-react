@@ -1,0 +1,85 @@
+.noUserFound {
+    text-align: center;
+}
+
+.userList__container {
+    border: 0.1rem solid #e2dfdf;
+    border-radius: 0.1rem;
+}
+
+.userList__elements {
+
+}
+
+.userList__element {
+    padding: 1.2rem 0.7rem 1.2rem 1.2rem;
+}
+
+.userList__element:nth-child(2n + 1) {
+    background-color: #f6f5f5;
+}
+
+.userList__elementContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userList__elementContainer__detailsContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.userList__elementContainer__detailsContainer img {
+    max-height: 2.5rem;
+    border-radius: 50%;
+}
+
+.userList__elementContainer__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 1.2rem;
+}
+
+@media (max-width: 480px) {
+    .userList__elementContainer__details {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.userList__elementContainer__infoContainer {
+    cursor: pointer;
+}
+
+.userList__elementContainer__infoContainer__name,
+.userList__elementContainer__infoContainer__username {
+    font-size: 0.9rem;
+    color: #424242;
+}
+
+.userList__elementContainer__additionalInfoContainer {
+
+}
+
+.userList__elementContainer__additionalInfoContainer a {
+    color: #48cff1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
+@media (max-width: 480px) {
+    .userList__elementContainer__infoContainer__name,
+    .userList__elementContainer__infoContainer__username {
+        font-size: 0.7rem;
+    }
+    .userList__elementContainer__additionalInfoContainer a {
+        font-size: 0.7rem;
+    }
+}
